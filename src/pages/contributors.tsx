@@ -1,60 +1,63 @@
-import React from 'react';
-import { motion } from 'framer-motion';
-import { Award, Image, Star, TrendingUp, Users } from 'lucide-react';
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+import React from "react";
+import { motion } from "framer-motion";
+import { Award, Image, Star, TrendingUp, Users } from "lucide-react";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
 const MOCK_CONTRIBUTORS = [
   {
-    id: '1',
-    name: 'Dr. Sarah Johnson',
-    institution: 'Mayo Clinic',
-    specialization: 'Orthopedic Surgery',
-    contributionCount: 156,
-    accuracy: 98.5,
+    id: "1",
+    name: "Test Contributor",
+    institution: "XYZ Hospital",
+    specialization: "Orthopedic Surgery",
+    contributionCount: 0,
+    accuracy: 0,
     verified: true,
-    image: 'https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&q=80&w=300&h=300'
+    image:
+      "https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&q=80&w=300&h=300",
   },
-  {
-    id: '2',
-    name: 'Dr. Michael Chen',
-    institution: 'Johns Hopkins Hospital',
-    specialization: 'Radiology',
-    contributionCount: 124,
-    accuracy: 97.8,
-    verified: true,
-    image: 'https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?auto=format&fit=crop&q=80&w=300&h=300'
-  },
-  {
-    id: '3',
-    name: 'Dr. Emily Williams',
-    institution: 'Cleveland Clinic',
-    specialization: 'Rheumatology',
-    contributionCount: 98,
-    accuracy: 96.9,
-    verified: true,
-    image: 'https://images.unsplash.com/photo-1594824476967-48c8b964273f?auto=format&fit=crop&q=80&w=300&h=300'
-  }
+  //   {
+  //     id: "2",
+  //     name: "Dr. Michael Chen",
+  //     institution: "Johns Hopkins Hospital",
+  //     specialization: "Radiology",
+  //     contributionCount: 124,
+  //     accuracy: 97.8,
+  //     verified: true,
+  //     image:
+  //       "https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?auto=format&fit=crop&q=80&w=300&h=300",
+  //   },
+  //   {
+  //     id: "3",
+  //     name: "Dr. Emily Williams",
+  //     institution: "Cleveland Clinic",
+  //     specialization: "Rheumatology",
+  //     contributionCount: 98,
+  //     accuracy: 96.9,
+  //     verified: true,
+  //     image:
+  //       "https://images.unsplash.com/photo-1594824476967-48c8b964273f?auto=format&fit=crop&q=80&w=300&h=300",
+  //   },
 ];
 
 const STATISTICS = [
   {
-    label: 'Total Contributors',
-    value: '150+',
+    label: "Total Contributors",
+    value: "0",
     icon: Users,
-    description: 'Medical professionals worldwide'
+    description: "Medical professionals worldwide",
   },
   {
-    label: 'X-Rays Analyzed',
-    value: '25,000+',
+    label: "X-Rays Analyzed",
+    value: "9000+",
     icon: Image,
-    description: 'High-quality knee X-rays'
+    description: "High-quality knee X-rays",
   },
   {
-    label: 'Average Accuracy',
-    value: '97.8%',
+    label: "Average Accuracy",
+    value: "-",
     icon: TrendingUp,
-    description: 'Consistent diagnostic precision'
-  }
+    description: "Consistent diagnostic precision",
+  },
 ];
 
 export function ContributorsPage() {
@@ -70,8 +73,9 @@ export function ContributorsPage() {
             Our Expert Contributors
           </h1>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            Meet the dedicated medical professionals who contribute their expertise
-            to improve our AI-powered knee osteoarthritis analysis system.
+            Meet the dedicated medical professionals who contribute their
+            expertise to improve our AI-powered knee osteoarthritis analysis
+            system.
           </p>
         </motion.div>
 
@@ -90,11 +94,15 @@ export function ContributorsPage() {
                       <stat.icon className="h-6 w-6" />
                     </div>
                     <div>
-                      <p className="text-2xl font-bold text-gray-900">{stat.value}</p>
+                      <p className="text-2xl font-bold text-gray-900">
+                        {stat.value}
+                      </p>
                       <p className="text-sm text-gray-500">{stat.label}</p>
                     </div>
                   </div>
-                  <p className="mt-2 text-sm text-gray-600">{stat.description}</p>
+                  <p className="mt-2 text-sm text-gray-600">
+                    {stat.description}
+                  </p>
                 </CardContent>
               </Card>
             </motion.div>
@@ -126,8 +134,12 @@ export function ContributorsPage() {
                           <Star className="h-4 w-4 text-yellow-500 fill-current" />
                         )}
                       </h3>
-                      <p className="text-sm text-gray-500">{contributor.institution}</p>
-                      <p className="text-sm text-gray-500">{contributor.specialization}</p>
+                      <p className="text-sm text-gray-500">
+                        {contributor.institution}
+                      </p>
+                      <p className="text-sm text-gray-500">
+                        {contributor.specialization}
+                      </p>
                     </div>
                     <Award className="h-6 w-6 text-blue-600" />
                   </div>

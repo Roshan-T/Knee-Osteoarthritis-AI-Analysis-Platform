@@ -9,7 +9,8 @@
 
 An advanced web platform for diagnosing and analyzing knee osteoarthritis (OA) severity using deep learning. This project combines a React-based frontend with a PyTorch-powered AI backend to provide accurate grading of knee X-rays.
 
-![Platform Preview](https://images.unsplash.com/photo-1584515933487-779824d29309?auto=format&fit=crop&q=80&w=1400)
+![image](https://github.com/user-attachments/assets/cade93bc-0612-4cc7-a921-4d33840c8b05)
+
 
 ## ✨ Features
 
@@ -126,8 +127,11 @@ The platform uses a custom-designed deep learning model:
 ## 📸 Screenshots
 
 <div style="display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 20px;">
-  <img src="https://images.unsplash.com/photo-1584515933487-779824d29309?auto=format&fit=crop&q=80&w=600" width="45%" alt="Analysis Interface" />
-  <img src="https://images.unsplash.com/photo-1583323722465-5546c8fb6d0a?auto=format&fit=crop&q=80&w=600" width="45%" alt="GradCAM Visualization" />
+<img width="1256" alt="image" src="https://github.com/user-attachments/assets/b5958235-4879-48fd-b8b6-575307574bc1" />
+
+![localhost_5173_](https://github.com/user-attachments/assets/fc687aca-bb05-45b8-8158-22a829f74254)
+
+
 </div>
 
 ## 🔍 How It Works
@@ -147,12 +151,6 @@ The platform includes comprehensive educational resources:
 - Treatment recommendations based on severity
 - Interactive elements for patient education
 
-## 🔒 Security & Privacy
-
-- All X-ray images are processed locally when possible
-- Contributed images undergo strict anonymization
-- Medical professional verification system
-- HTTPS encryption for all data transmission
 
 ## 🤝 Contributing
 
@@ -164,13 +162,4 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 4. Push to the branch (`git push origin feature/amazing-feature`)
 5. Open a Pull Request
 
-## 📄 License
 
-This project is licensed under the MIT License - see the LICENSE file for details.
-
-## 🙏 Acknowledgements
-
-- [TorchXRayVision](https://github.com/mlmed/torchxrayvision) for inspiration on medical imaging models
-- [OpenCV](https://opencv.org/) for image processing capabilities
-- [FastAPI](https://fastapi.tiangolo.com/) for the high-performance API framework
-- Medical professionals who contributed to dataset validation
